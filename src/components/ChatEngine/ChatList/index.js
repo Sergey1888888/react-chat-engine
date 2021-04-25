@@ -80,6 +80,8 @@ const ChatList = props => {
     return (
         <div style={styles.chatListContainer} className='ce-chat-list'>
             <div style={styles.chatsContainer} className='ce-chats-container'>
+                { props.renderNewChatForm ? props.renderNewChatForm(conn) : <ChatForm  /> }
+
                 { renderChats(chatList) } 
 
                 { hasMoreChats && chatList.length > 0 && <ChatLoader onVisible={() => loadChats()} /> }
