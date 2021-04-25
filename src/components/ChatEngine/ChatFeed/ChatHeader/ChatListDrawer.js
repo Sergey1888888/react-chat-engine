@@ -24,7 +24,7 @@ const ChatListDrawer = props => {
 
                     <div style={styles.titleContainer}>
                         <div style={styles.titleText}>
-                            My Chats
+                            Диалоги
                         </div>
                     </div>
 
