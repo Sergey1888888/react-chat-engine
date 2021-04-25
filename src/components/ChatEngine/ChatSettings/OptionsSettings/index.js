@@ -21,7 +21,7 @@ const OptionsSettings = props => {
                 style={state.hovered ? { backgroundColor: '#f0f0f0', cursor: 'pointer' } : {}}
             >
                 <div style={{ fontSize: '17px', padding: '12px', fontWeight: '600' }}>
-                    Options
+                    Настройки
                 </div>
 
                 {
