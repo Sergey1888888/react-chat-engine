@@ -24,7 +24,7 @@ const ChatSettingsDrawer = props => {
 
                     <div style={styles.titleContainer}>
                         <div style={styles.titleText}>
-                            Chat Settings
+                            Настройки
                         </div>
                     </div>
 
