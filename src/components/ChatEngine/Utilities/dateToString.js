@@ -1,6 +1,6 @@
 export function timeSinceDate(date) {
     if (!date) return ''
-
+    console.log(`DATE: ${date}`);
     const day = date.substr(8,2)
     const month = date.substr(5,2)
     const year = date.substr(0,4)
