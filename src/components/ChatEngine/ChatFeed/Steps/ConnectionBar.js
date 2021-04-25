@@ -26,7 +26,7 @@ const ConnectionBar  = () => {
         >
             <SyncOutlined spin />
             {' '}
-            Connecting
+            Загрузка
         </div>
     )
 }
