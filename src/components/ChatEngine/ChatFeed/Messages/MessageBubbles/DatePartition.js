@@ -15,7 +15,7 @@ const DatePartition = props => {
         const day = date_time.substr(8, 2)
 
         var time = date_time.substr(11, 5)
-        const timeM = parseInt(time.substr(0, 2)) + 3 >= 24 ? parseInt(time.substr(0, 2)) - 21) : parseInt(time.substr(0, 2)) + 3;
+        const timeM = parseInt(time.substr(0, 2)) + 3 >= 24 ? parseInt(time.substr(0, 2)) - 21 : parseInt(time.substr(0, 2)) + 3;
         time = String(timeM + ':' + time.substr(3, 2)
 
         return time + ', ' + month + ' ' + day + ', ' + year
