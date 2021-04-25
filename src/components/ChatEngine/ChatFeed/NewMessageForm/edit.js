@@ -27,7 +27,7 @@ const MessageEditForm = props => {
     <form onSubmit={handleSubmit.bind(this)}>
       <TextInput 
         type="text" 
-        label='Edit message...'
+        label='Изменить сообщение...'
         value={value} 
         style={{ width: 'calc(100% - 84px)' }}
         handleChange={handleChange.bind(this)} 
