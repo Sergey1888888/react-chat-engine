@@ -1,6 +1,6 @@
 import React from 'react'
 
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const months = ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек']
 const suffix = [
   'st', 'nd', 'rd', 'th', 'th',
   'th', 'th', 'th', 'th', 'th',
