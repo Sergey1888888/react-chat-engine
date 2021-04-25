@@ -1,5 +1,6 @@
+const months = ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек']
+
 export function timeSinceDate(date) {
-    const months = ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек']
     if (!date) return ''
     const day = date.substr(8,2)
     const month = months[parseInt(date.substr(5, 2)) - 1]
