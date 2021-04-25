@@ -39,7 +39,7 @@ const PeopleSettings = props => {
                 <div
                     className='ce-section-title ce-people-title'
                     style={{ fontSize: '17px', padding: '12px', fontWeight: '600' }}>
-                    People
+                    Пользователи
                 </div>
 
                 {
