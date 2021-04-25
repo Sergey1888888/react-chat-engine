@@ -1,7 +1,6 @@
 export function timeSinceDate(date) {
     const months = ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек']
     if (!date) return ''
-    console.log(`DATE: ${date.toString()}`);
     const day = date.substr(8,2)
     const month = months[parseInt(date.substr(5, 2)) - 1]
     const year = date.substr(0,4)
@@ -9,15 +8,7 @@ export function timeSinceDate(date) {
     const minute = date.substr(14,2)
     const second = date.substr(17,2)
 
-    var sent = new Date(`${month} ${day} ${year}`)
-    sent.setHours(hour)
-    sent.setMinutes(minute)
-    sent.setSeconds(second)
-    sent = sent.toString()
-
-    const dayStr = sent.substr(0, 10)
-    const timeStr = sent.substr(15, 6)
-    return `${dayStr} at ${timeStr}`
+    return `${day}.${month}.${year} в ${hour}:${minute}:${second}`
 }
 
 export function daySinceSent(date) {
@@ -26,5 +17,7 @@ export function daySinceSent(date) {
     const month = date.substr(5,2)
     const year = date.substr(0,4)
     const sent = new Date(`${month} ${day} ${year}`).toString()
+    console.log(sent)
+  console.log(sent.substr(4, 6))
     return sent.substr(4, 6)
 }
