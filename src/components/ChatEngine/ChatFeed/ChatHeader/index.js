@@ -23,8 +23,8 @@ const ChatHeader = () => {
     const chat = chats[activeChat]
     const otherPerson = chat.people.find(person => person.person.username !== conn.userName);
     const title = chat.is_direct_chat && otherPerson ? otherPerson.person.custom_json.username : chat.title
-    console.log("Other person json:", otherPerson.person.custom_json.username)
-    console.log("Other person: ", otherPerson.person)
+    console.log("Other person json:", otherPerson?.person?.custom_json?.username)
+    console.log("Other person: ", otherPerson?.person)
     return (
         <Row 
             className='ce-chat-title'
