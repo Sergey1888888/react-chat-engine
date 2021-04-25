@@ -22,7 +22,7 @@ const ChatHeader = () => {
 
     const chat = chats[activeChat]
     const otherPerson = chat.people.find(person => person.person.username !== conn.userName);
-    const title = chat.is_direct_chat && otherPerson ? otherPerson.person.username : chat.title
+    const title = chat.is_direct_chat && otherPerson ? otherPerson.person.custom_json.username : chat.title
 
     return (
         <Row 
