@@ -76,7 +76,7 @@ const NewMessageForm = () => {
         <div style={styles.inputContainer} className='ce-message-input-form'>
           <TextAreaInput
             value={state.value}
-            label='Send a message...'
+            label='Отправить сообщение...'
             handleChange={handleChange.bind(this)}
             onSubmit={handleSubmit.bind(this)}
           />
