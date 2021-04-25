@@ -50,14 +50,6 @@ const NewChatForm = () => {
                 Диалоги
               </div>
             </div>
-
-            <div style={{ width: '100%', textAlign: 'right' }}>
-              <Button 
-                icon='plus'
-                id='new-chat-plus-button'
-                onClick={() => setSelected(true)}
-              />
-            </div>
           </div>
         }
     </div>
