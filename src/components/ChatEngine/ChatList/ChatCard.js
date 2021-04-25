@@ -30,7 +30,7 @@ const ChatCard = props => {
     if (!lastMessage) {
         lastMessage = chat.last_message.attachments.length > 0 ?
         `${chat.last_message.attachments.length} image${chat.last_message.attachments.length > 1 ? 's' : ''}` :
-        'Say hello!'
+        'Вы можете написать первое сообщение!'
     }
 
     return (
