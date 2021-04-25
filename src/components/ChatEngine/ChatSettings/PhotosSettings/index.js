@@ -31,7 +31,7 @@ const PhotosSettings = props => {
                     className='ce-section-title ce-photo-title'
                     style={{ fontSize: '17px', padding: '12px', fontWeight: '600' }}
                 >
-                    Photos
+                    Фотографии
                 </div>
 
                 {
