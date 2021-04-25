@@ -55,8 +55,8 @@ const ChatHeader = () => {
                 <div style={styles.subtitleText} className='ce-chat-subtitle-text'>
                     {
                         chat.last_message.created && chat.last_message.created.length > 0 ?
-                        `Active ${timeSinceDate(chat.last_message.created)}` :
-                        'Say hello!'
+                        `Последняя активность ${timeSinceDate(chat.last_message.created)}` :
+                        'Вы можете написать первое сообщение!'
                     }
                 </div>
             </Col>
