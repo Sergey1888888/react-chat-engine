@@ -21,7 +21,7 @@ const ChatSettingsTop = props => {
                 <div style={{ float: 'left', position: 'relative', left: 'calc(50% - 22px)' }}>
                     <Avatar 
                         show_online={false} 
-                        username={people[0].person.username} 
+                        username={people[0].person.custom_json.username} 
                         avatar={people[0].person.avatar}
                     />
                 </div>
@@ -35,7 +35,7 @@ const ChatSettingsTop = props => {
                 <div style={{ float: 'left', position: 'relative', left: 'calc(50% - 22px - 15px)' }}>
                     <Avatar 
                         show_online={false} 
-                        username={people[0].person.username} 
+                        username={people[0].person.custom_json.username} 
                         avatar={people[0].person.avatar}
                     />
                 </div>
@@ -43,7 +43,7 @@ const ChatSettingsTop = props => {
                 <div style={{ float: 'left', position: 'relative', left: 'calc(50% - 44px - 22px + 15px)' }}>
                     <Avatar 
                         show_online={false} 
-                        username={people[1].person.username} 
+                        username={people[1].person.custom_json.username} 
                         avatar={people[1].person.avatar}
                     />
                 </div>
@@ -57,7 +57,7 @@ const ChatSettingsTop = props => {
                 <div style={{ float: 'left', position: 'relative', left: 'calc(50% - 22px - 24px)' }}>
                     <Avatar 
                         show_online={false} 
-                        username={people[0].person.username}
+                        username={people[0].person.custom_json.username}
                         avatar={people[0].person.avatar}
                     />
                 </div>
@@ -65,7 +65,7 @@ const ChatSettingsTop = props => {
                 <div style={{ float: 'left', position: 'relative', left: 'calc(50% - 24px - 44px)' }}>
                     <Avatar 
                         show_online={false} 
-                        username={people[1].person.username} 
+                        username={people[1].person.custom_json.username} 
                         avatar={people[1].person.avatar}
                     />
                 </div>
@@ -73,7 +73,7 @@ const ChatSettingsTop = props => {
                 <div style={{ float: 'left', position: 'relative', left: 'calc(50% - 22px - 44px - 44px + 24px)' }}>
                     <Avatar 
                         show_online={false} 
-                        username={people[2].person.username}
+                        username={people[2].person.custom_json.username}
                         avatar={people[2].person.avatar}
                     />
                 </div>
