@@ -22,7 +22,7 @@ const Typers = props => {
                                 key={`typer_${index}`} 
                                 style={{ color: stringToColor(username), padding: '2px', paddingLeft: '12px' }}
                             >
-                                {`${username} is typing...`}
+                                {`${username} печатает...`}
                             </div>
                         )
 
