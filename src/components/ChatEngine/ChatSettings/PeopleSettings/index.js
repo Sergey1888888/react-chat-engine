@@ -57,11 +57,6 @@ const PeopleSettings = props => {
                     { renderChatPeople(chat.people, chat) }
 
                     <div style={{ height: '12px' }} />
-
-                    {
-                        props && chat && props.userName === chat.admin.username &&
-                        <PersonForm conn={props} chat={chat} />
-                    }
                 </div>
             }
         </div>
