@@ -108,7 +108,7 @@ const ChatSettingsTop = props => {
                     border: '0px solid white',
                     width: '100%',
                 }}>
-                    { otherPerson.person.username }
+                    { otherPerson.person.custom_json.username }
                 </div> :
                 <TitleForm chat={chat} conn={conn} />
             }
