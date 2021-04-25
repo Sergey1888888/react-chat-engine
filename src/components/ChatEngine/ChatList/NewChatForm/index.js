@@ -47,7 +47,7 @@ const NewChatForm = () => {
           <div>
             <div style={{ height: '0px' }}>
               <div style={{ fontWeight: '600', fontSize: '24px', position: 'relative', top: '4px', width:' calc(100% - 48px)' }}>
-                My Chats
+                Диалоги
               </div>
             </div>
 
