@@ -37,7 +37,7 @@ const OptionsSettings = props => {
                     <div style={{ height: '12px' }} />
 
                     <Button 
-                        value="Delete" 
+                        value="Удалить" 
                         theme='danger'
                         icon='delete'
                         id='ce-delete-chat-button'
