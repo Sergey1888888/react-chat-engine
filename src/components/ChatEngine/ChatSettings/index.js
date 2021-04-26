@@ -35,17 +35,6 @@ const ChatSettings = props => {
                     props.renderPhotosSettings(chat) :
                     <PhotosSettings {...props} chat={chat} />
                 }
-// УДАЛЕНИЕ ЧАТА ТОЛЬКО ДЛЯ АДМИНА
-//                 {
-//                     props && chat && props.userName === chat.admin.username  &&
-//                     <div>
-//                         {
-//                             props.renderOptionsSettings ?
-//                             props.renderOptionsSettings(conn, chat) :
-//                             <OptionsSettings {...props} chat={chat} />
-//                         }
-//                     </div>
-//                 }
             </div>
         </div>
     )
