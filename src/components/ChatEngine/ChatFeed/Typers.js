@@ -18,13 +18,12 @@ const Typers = props => {
             {
                 Object.keys(typers).map((username, index) => {
                     if (conn.userName !== username && props.currentTime < typers[username] + 2000) {
-                        console.log(chat?.people?.filter(person => person.person.username === username)[0].person.custom_json.username)
                         return (
                             <div 
                                 key={`typer_${index}`} 
                                 style={{ color: stringToColor(username), padding: '2px', paddingLeft: '12px' }}
                             >
-                                {`asdsad печатает...`}
+                                {`${chat?.people?.filter(person => person.person.username === username)[0].person.custom_json.username} печатает...`}
                             </div>
                         )
 
