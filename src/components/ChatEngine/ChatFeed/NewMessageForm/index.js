@@ -61,7 +61,7 @@ const NewMessageForm = () => {
     newSendingMessages[data.custom_json.sender_id] = data
     setSendingMessages(newSendingMessages)
   }
-
+  console.log(state.attachments)
   return (
     <div 
       id='msg-form-container'
