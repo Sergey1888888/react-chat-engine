@@ -9,7 +9,7 @@ const ImagesInput = props => {
     })
 
     function onSelect(event) {
-        console.log("event2", [...Array(event.target.files.length).keys()])
+        console.log("event2", event.target.files)
         let checkedFiles = []
         const files = event.target.files
 
