@@ -12,7 +12,7 @@ const Typers = props => {
     if (!conn || conn === null) return <div />
 
     if (props.renderIsTyping) { return props.renderIsTyping(typers) }
-    console.log(chat.people.filter(person => person.person.username === username)[0].person.custom_json.username)
+    console.log(chat?.people?.filter(person => person.person.username === username)[0].person.custom_json.username)
     return (
         <div>
             {
