@@ -12,6 +12,7 @@ const ImagesInput = props => {
         const files = Array.from(event.target.files)
 
         files.map((file) => {
+            console.log(file.type)
             if (file) { checkedFiles.push(file) }
         })
         props.onSelectFiles &&  props.onSelectFiles(files)
