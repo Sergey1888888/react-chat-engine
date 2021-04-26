@@ -41,8 +41,6 @@ const TheirMessage = props => {
     const { lastMessage, message, nextMessage } = props
 
     if (!message) { return <div /> }
-    console.log(message?.sender_username)
-    console.log(message)
     const attachments = message && message.attachments && message.attachments
 
     const topLeftRadius = !lastMessage || lastMessage.sender_username !== message.sender_username ? '1.3em' : '0.3em'
@@ -59,7 +57,7 @@ const TheirMessage = props => {
             {
                 (!lastMessage || lastMessage.sender_username !== message.sender_username) &&
                 <div style={styles.nameText} className='ce-their-message-sender'>
-                    { message.sender_username }
+                    { message.sender.custom_json.username }
                 </div>
             }
         
@@ -70,7 +68,7 @@ const TheirMessage = props => {
                             (!nextMessage || nextMessage.sender_username !== message.sender_username) &&
                             <Avatar
                                 show_online={false}
-                                username={message.sender_username}
+                                username={message.sender.custom_json.username}
                                 avatar={message.sender && message.sender.avatar}
                             />
                         }
