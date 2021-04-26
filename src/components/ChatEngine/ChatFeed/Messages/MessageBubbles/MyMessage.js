@@ -20,7 +20,7 @@ const Message = props => {
                     <Dot 
                         key={`read_${index}`}
                         avatar={chatPerson.person.avatar}
-                        username={chatPerson.person.username}
+                        username={chatPerson.person.custom_json.username}
                         style={{ float: 'right', marginLeft: '4px' }} 
                     />
                 )
