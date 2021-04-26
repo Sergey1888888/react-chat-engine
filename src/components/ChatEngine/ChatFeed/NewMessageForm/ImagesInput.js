@@ -9,7 +9,8 @@ const ImagesInput = props => {
     })
 
     function onSelect(event) {
-        console.log("event", event.target)
+        console.log("event", event.target?.file[])
+        console.log("event2", event.target.files)
         let files = []
         const indexes = [...Array(event.target.files.length).keys()]
 
@@ -43,6 +44,7 @@ const ImagesInput = props => {
 
             <input
                 multiple
+                name="file[]"
                 id="files"
                 accept="image/x-png,image/gif,image/jpeg"
                 style={{ visibility: "hidden" }}
