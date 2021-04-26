@@ -5,9 +5,9 @@ import { ChatEngineContext } from '../../Context'
 import { stringToColor } from '../Utilities/colorMapping'
 
 const Typers = props => {
-    const { conn, activeChat, typingCounter, chats, currentChat } = useContext(ChatEngineContext)
+    const { conn, activeChat, typingCounter, chats, activeChat } = useContext(ChatEngineContext)
     const typers = typingCounter && typingCounter[activeChat] ? typingCounter[activeChat] : []
-    const chat = chats && chats[currentChat]
+    const chat = chats && chats[activeChat]
     console.log(chat)
     if (!conn || conn === null) return <div />
 
