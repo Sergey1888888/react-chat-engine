@@ -44,7 +44,7 @@ const ImagesInput = props => {
                 style={{ visibility: "hidden" }}
                 type="file"
                 onChange={(e) => onSelect(e)} 
-                onClick={this.value=null}
+                onClick={(e) => e.target.value = null}
             />
         </form>
     );
