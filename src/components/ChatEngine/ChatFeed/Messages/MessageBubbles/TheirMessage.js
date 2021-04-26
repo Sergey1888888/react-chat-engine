@@ -21,7 +21,7 @@ const TheirMessage = props => {
                     <Dot 
                         key={`read_${index}`}
                         avatar={person.person.avatar}
-                        username={person.person.username}
+                        username={person.person.custom_json.username}
                         style={{ float: 'left', marginLeft: '4px' }}
                     />
                 )
