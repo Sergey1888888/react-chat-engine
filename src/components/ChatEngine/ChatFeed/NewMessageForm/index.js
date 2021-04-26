@@ -61,7 +61,6 @@ const NewMessageForm = () => {
     newSendingMessages[data.custom_json.sender_id] = data
     setSendingMessages(newSendingMessages)
   }
-  console.log(state.attachments)
   return (
     <div 
       id='msg-form-container'
@@ -70,7 +69,10 @@ const NewMessageForm = () => {
     >
       <FileRow files={state.attachments} onRemove={(i) => onRemove(i)} />
 
-      <ImagesInput onSelectFiles={(attachments) => setState({ ...state, attachments })} />
+      <ImagesInput onSelectFiles={(attachments) => {
+                                  console.log("ATTACHMENTS", attachments);
+                                  setState({ ...state, attachments })
+                                  }} />
 
       <form onSubmit={handleSubmit.bind(this)} className='ce-message-form'>
         <div style={styles.inputContainer} className='ce-message-input-form'>
