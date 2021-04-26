@@ -8,13 +8,8 @@ const ImagesInput = props => {
     })
 
     function onSelect(event) {
-        let checkedFiles = []
         const files = Array.from(event.target.files)
-
-        files.map((file) => {
-            if (file.type === "image/jpeg" || file.type === "image/gif" || file.type === "image/png" || file.type === "image/x-png") { checkedFiles.push(file) }
-        })
-        props.onSelectFiles &&  props.onSelectFiles(checkedFiles)
+        props.onSelectFiles &&  props.onSelectFiles(files)
     }
   
     return (
