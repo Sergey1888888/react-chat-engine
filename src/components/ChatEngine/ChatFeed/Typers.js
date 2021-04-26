@@ -16,6 +16,7 @@ const Typers = props => {
         <div>
             {
                 Object.keys(typers).map((username, index) => {
+                    console.log(username)
                     if (conn.userName !== username && props.currentTime < typers[username] + 2000) {
                         return (
                             <div 
