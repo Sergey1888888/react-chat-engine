@@ -7,7 +7,6 @@ const Thumbnail = props => {
     const [blob, setBlob] = useState('')
     useEffect(() => {
       setBlob(URL.createObjectURL(props.file))
-      return URL.revokeObjectURL(blob)
     }, [props.file])
     return (
         <div 
@@ -26,10 +25,7 @@ const Thumbnail = props => {
                 
                 <CloseCircleTwoTone 
                     style={styles.closeIcon} 
-                    onClick={() => {
-                             URL.revokeObjectURL(blob)
-                             props.onRemove && props.onRemove()
-                            }}
+                    onClick={() => props.onRemove && props.onRemove()}
                 />
             }
         </div>
