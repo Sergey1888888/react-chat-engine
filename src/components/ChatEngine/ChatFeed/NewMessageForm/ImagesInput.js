@@ -9,17 +9,16 @@ const ImagesInput = props => {
     })
 
     function onSelect(event) {
-        console.log(event.target.files)
         let checkedFiles = []
         const files = Array.from(event.target.files)
 
         files.map((file) => {
             if (file) { checkedFiles.push(file) }
         })
-        
+        setState({...state, files: checkedFiles})
         props.onSelectFiles &&  props.onSelectFiles(files)
     }
-
+    console.log(state.files)
     return (
         <form
             className="uploader"
