@@ -22,7 +22,7 @@ const Thumbnail = props => {
             />
 
             {
-                hovered &&
+                
                 <CloseCircleTwoTone 
                     style={styles.closeIcon} 
                     onClick={() => props.onRemove && props.onRemove()}
