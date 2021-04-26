@@ -3,7 +3,6 @@ import React from 'react'
 import Thumbnail from './Thumbnail'
 
 const FileRow = props => {
-  console.log(props)
     function renderFiles() {
         return props.files.map((file, index) => {
             return (
