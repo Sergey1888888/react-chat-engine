@@ -8,7 +8,7 @@ const Typers = props => {
     const { conn, activeChat, typingCounter, chats, currentChat } = useContext(ChatEngineContext)
     const typers = typingCounter && typingCounter[activeChat] ? typingCounter[activeChat] : []
     const chat = chats && chats[currentChat]
-    
+    console.log(chat)
     if (!conn || conn === null) return <div />
 
     if (props.renderIsTyping) { return props.renderIsTyping(typers) }
@@ -23,7 +23,7 @@ const Typers = props => {
                                 key={`typer_${index}`} 
                                 style={{ color: stringToColor(username), padding: '2px', paddingLeft: '12px' }}
                             >
-                                {`${chat.people.filter(person => console.log(person))} печатает...`}
+                                {`rofl печатает...`}
                             </div>
                         )
 
