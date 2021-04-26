@@ -41,7 +41,8 @@ const TheirMessage = props => {
     const { lastMessage, message, nextMessage } = props
 
     if (!message) { return <div /> }
-
+    console.log(message?.sender_username)
+    console.log(message)
     const attachments = message && message.attachments && message.attachments
 
     const topLeftRadius = !lastMessage || lastMessage.sender_username !== message.sender_username ? '1.3em' : '0.3em'
