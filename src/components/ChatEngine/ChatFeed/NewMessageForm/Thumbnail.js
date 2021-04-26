@@ -4,7 +4,10 @@ import { CloseCircleTwoTone } from '@ant-design/icons'
 
 const Thumbnail = props => {
     const [hovered, setHovered] = useState(false)
-
+    const [blob, setBlob] = useState('')
+    useEffect(() => {
+      setBlob(URL.createObjectURL(props.file))
+    }, [])
     return (
         <div 
             style={{ padding: '12px 6px', display: 'inline' }}
@@ -15,7 +18,7 @@ const Thumbnail = props => {
             <img
                 style={styles.imageSquare}
                 alt={props.file ? props.file.name : ''}
-                src={URL.createObjectURL(props.file)}
+                src={blob}
             />
 
             {
