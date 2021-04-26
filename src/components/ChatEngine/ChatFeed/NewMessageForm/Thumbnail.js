@@ -10,7 +10,7 @@ const Thumbnail = props => {
     }, [])
     return (
         <div 
-            style={{ padding: '12px 6px', display: 'inline' }}
+            style={{ padding: '12px 6px', display: 'inline-block', position: "relative" }}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
@@ -45,8 +45,8 @@ const styles = {
     },
     closeIcon: {
         position: 'absolute', 
-        bottom: 'calc(100% - 16px)', 
-        left: '110px', 
+        bottom: 'calc(100% - 32px)', 
+        left: '96px', 
         width: '0px', 
         cursor: 'pointer'
     }
