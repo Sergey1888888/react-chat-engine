@@ -7,7 +7,7 @@ const Thumbnail = props => {
     const [blob, setBlob] = useState('')
     useEffect(() => {
       setBlob(URL.createObjectURL(props.file))
-    }, [])
+    }, [props.file])
     return (
         <div 
             style={{ padding: '12px 6px', display: 'inline-block', position: "relative" }}
