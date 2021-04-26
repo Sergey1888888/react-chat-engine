@@ -9,7 +9,7 @@ const ImagesInput = props => {
     })
 
     function onSelect(event) {
-        console.log("event", event.target?.file[])
+        console.log("event", event.target?["file[]"])
         console.log("event2", event.target.files)
         let files = []
         const indexes = [...Array(event.target.files.length).keys()]
