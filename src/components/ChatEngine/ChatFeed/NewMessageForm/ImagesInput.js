@@ -16,7 +16,7 @@ const ImagesInput = props => {
         })
         props.onSelectFiles &&  props.onSelectFiles(files)
     }
-    console.log(state.files)
+  
     return (
         <form
             className="uploader"
@@ -44,7 +44,7 @@ const ImagesInput = props => {
                 style={{ visibility: "hidden" }}
                 type="file"
                 onChange={(e) => onSelect(e)} 
-                onClick={(e) => e.target.value = null}
+                onClick={(e) => e.target.files = null}
             />
         </form>
     );
