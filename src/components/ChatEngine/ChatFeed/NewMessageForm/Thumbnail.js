@@ -44,9 +44,9 @@ const styles = {
         display: 'inline',
     },
     closeIcon: {
-        position: 'relative', 
-        bottom: '91px', 
-        right: '20px', 
+        position: 'absolute', 
+        bottom: 'calc(100% - 16px)', 
+        left: '110px', 
         width: '0px', 
         cursor: 'pointer'
     }
