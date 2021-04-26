@@ -5,7 +5,6 @@ import { PaperClipOutlined } from '@ant-design/icons'
 const ImagesInput = props => {
     const [state, setState] = useState({
         hovered: false,
-        files: []
     })
 
     function onSelect(event) {
@@ -15,7 +14,6 @@ const ImagesInput = props => {
         files.map((file) => {
             if (file) { checkedFiles.push(file) }
         })
-        setState({...state, files: checkedFiles})
         props.onSelectFiles &&  props.onSelectFiles(files)
     }
     console.log(state.files)
@@ -46,6 +44,7 @@ const ImagesInput = props => {
                 style={{ visibility: "hidden" }}
                 type="file"
                 onChange={(e) => onSelect(e)} 
+                onClick={this.value=null}
             />
         </form>
     );
