@@ -9,9 +9,9 @@ const ImagesInput = props => {
     })
 
     function onSelect(event) {
-        console.log("event2", event.target.files)
+        console.log("event2", Array(event.target.files))
         let checkedFiles = []
-        const files = event.target.files
+        const files = Array(event.target.files)
 
         files.map((file) => {
             if (file) { checkedFiles.push(file) }
